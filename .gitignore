@@ -17,8 +17,8 @@ coverage
 .cache
 # dist # keep built files to distribute via npm from github repo
 build
-style.css
-style.css.map
+# style.css # keep built files to distribute via npm from github repo
+# style.css.map # keep built files to distribute via npm from github repo
 
 # Error files
 yarn-error.log
