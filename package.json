@@ -10,7 +10,6 @@
     "clean:storybook": "rimraf build",
     "lint": "eslint src",
     "prettier": "prettier --write \"{src,example/src,stories}/**/*.{js,css,md}\"",
-    "prepare": "yarn run test && yarn run build",
     "prepublishOnly": "yarn run test && yarn run build",
     "release": "standard-version",
     "test": "jest",

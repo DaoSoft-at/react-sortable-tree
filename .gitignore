@@ -15,7 +15,7 @@ coverage
 
 # Build directories (Will be preserved by npm)
 .cache
-dist
+# dist # keep built files to distribute via npm from github repo
 build
 style.css
 style.css.map
