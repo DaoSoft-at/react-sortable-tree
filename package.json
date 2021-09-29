@@ -23,7 +23,6 @@
   "umdmin": "dist/index.umd.min.js",
   "files": [
     "dist",
-	"src",
     "style.css"
   ],
   "repository": {
