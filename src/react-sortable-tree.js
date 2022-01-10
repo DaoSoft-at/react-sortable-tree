@@ -332,7 +332,9 @@ class ReactSortableTree extends Component {
     });
 
     // Update the tree with data leaving all paths leading to matching nodes open
-    if (expand) {
+    // If nothing was expanded/collapsed, DON'T SET ignoreOneTreeUpdate
+    // (would prevent subsequent search on next treeData prop update) and don't trigger onChange for efficiency
+    if (expand && !isEqual(instanceProps.treeData, expandedTreeData)) {
       newState.instanceProps.ignoreOneTreeUpdate = true; // Prevents infinite loop
       onChange(expandedTreeData);
     }
